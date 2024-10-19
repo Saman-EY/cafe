@@ -1,18 +1,37 @@
+import { useState } from "react";
 
 function CafeAndRestuarant() {
+  const [activeTab, setActiveTab] = useState("1");
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab); // Update the active tab when clicked
+  };
+
   return (
     <main className="text-white container">
       {/* first sec */}
       <section className="HomeSec2 d-flex flex-column justify-content-between align-items-center gap-4">
         {/* tabs */}
         <div className="HomeSec2Tabs mt-3 mb-5">
-          <button data-tab="cafe" className="tab">
+          <button
+            data-tab="cafe"
+            onClick={() => handleTabClick("1")}
+            className={`tab ${activeTab === "1" ? "active" : ""}`}
+          >
             کافه
           </button>
-          <button data-tab="restuarant" className="tab">
+          <button
+            data-tab="restuarant"
+            className={`tab ${activeTab === "2" ? "active" : ""}`}
+            onClick={() => handleTabClick("2")}
+          >
             رستوران
           </button>
-          <button data-tab="cafe-restuarant" className="tab active">
+          <button
+            data-tab="cafe-restuarant"
+            className={`tab ${activeTab === "3" ? "active" : ""}`}
+            onClick={() => handleTabClick("3")}
+          >
             کافه، رستوران
           </button>
         </div>
@@ -20,7 +39,7 @@ function CafeAndRestuarant() {
       {/* first sec end */}
       <section className="position-relative w-100 overflow-hidden">
         {/* tab 1 */}
-        <div data-content="cafe" className="cafeRestuarant-tab-container">
+        <div data-content="cafe" className={`cafeRestuarant-tab-container ${activeTab === "1" ? "show" : ""}`} >
           {/* Categories filter */}
           <section className="CategoriesFilterSec d-flex flex-column flex-lg-row align-items-center justify-content-between gap-0 mb-3">
             {/* titles */}
@@ -927,7 +946,7 @@ function CafeAndRestuarant() {
         </div>
         {/* tab 1 end */}
         {/* tab 2 */}
-        <div data-content="restuarant" className="cafeRestuarant-tab-container">
+        <div data-content="restuarant" className={`cafeRestuarant-tab-container ${activeTab === "2" ? "show" : ""}`}>
           {/* Categories filter */}
           <section className="CategoriesFilterSec d-flex flex-column flex-lg-row align-items-center justify-content-between gap-0 mb-3">
             {/* titles */}
@@ -1836,7 +1855,7 @@ function CafeAndRestuarant() {
         {/* tab 3 */}
         <div
           data-content="cafe-restuarant"
-          className="cafeRestuarant-tab-container show"
+          className={`cafeRestuarant-tab-container ${activeTab === "3" ? "show" : ""}`}
         >
           {/* Categories filter */}
           <section className="CategoriesFilterSec d-flex flex-column flex-lg-row align-items-center justify-content-between gap-0 mb-3">

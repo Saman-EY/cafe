@@ -35,17 +35,17 @@ function Header() {
           <img src="../../assets/img-icons/takhfifcoffe-light.svg" alt="logo" />
           <ul className="d-flex gap-5 align-items-center">
             <li className={` ${pathname === "/" ? "active" : null}`}>
-              <a href="/">صفحه اصلی</a>
+              <Link href="/" >صفحه اصلی</Link>
             </li>
             <li
               className={` ${
                 pathname === "/cafe-restuarant" ? "active" : null
               }`}
             >
-              <a href="/cafe-restuarant">کافه، رستوران ها</a>
+              <Link href="/cafe-restuarant">کافه، رستوران ها</Link>
             </li>
             <li className={` ${pathname === "/cafe-single" ? "active" : null}`}>
-              <a href="/cafe-single">اطلاعات کافه</a>
+              <Link href="/cafe-single">اطلاعات کافه</Link>
             </li>
             <li className={` ${pathname === "/contact-us" ? "active" : null}`}>
               <Link href="/contact-us">تماس با ما</Link>

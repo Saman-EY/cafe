@@ -6,7 +6,7 @@ function CafeSingle() {
       <section className="SliderSec">
         <h5 className="mb-4">جزییات و رزرو</h5>
         <section className="SliderContainer menu-reserve">
-          <div className="swiper">
+          <div className="swiper s4">
             {/* Additional required wrapper */}
             <div className="swiper-wrapper">
               {/* Slides */}
@@ -33,14 +33,14 @@ function CafeSingle() {
               </div>
             </div>
             <div className="swiperUtilContainer">
-              <button id="mainslidernext" className="custom-next-btn">
+              <button id="mainslidernext4" className="custom-next-btn ">
                 <img
                   src="./assets/img-icons/right-arrow-orange.svg"
                   alt="svg"
                 />
               </button>
-              <div className="swiper-pagination" />
-              <button id="mainsliderprev" className="custom-prev-btn">
+              <div className="swiper-pagination s4" />
+              <button id="mainsliderprev4" className="custom-prev-btn  ">
                 <img src="./assets/img-icons/left-arrow-orange.svg" alt="svg" />
               </button>
             </div>

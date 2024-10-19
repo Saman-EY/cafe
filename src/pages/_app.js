@@ -4,7 +4,6 @@ import "@/styles/app.css";
 import "@/styles/responsive.css";
 import "@/styles/swiper-bundle.css";
 import "@/styles/swiper.css";
-import "@/dist/jalalidatepicker.css";
 
 import Script from "next/script";
 import Layout from "@/components/layout/Layout";

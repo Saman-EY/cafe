@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const swiper4 = new Swiper(".swiper.s4", {
   speed: 500,
   spaceBetween: 40,
 
@@ -14,16 +14,16 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const customPrevBtn = document.getElementById("mainslidernext");
-const customNextBtn = document.getElementById("mainsliderprev");
+const customPrevBtn4 = document.getElementById("mainslidernext4");
+const customNextBtn4 = document.getElementById("mainsliderprev4");
 
 // Add event listeners to custom buttons
-customPrevBtn.addEventListener("click", function () {
-  swiper.slidePrev(); // Go to the previous slide
+customPrevBtn4.addEventListener("click", function () {
+  swiper4.slidePrev(); // Go to the previous slide
 });
 
-customNextBtn.addEventListener("click", function () {
-  swiper.slideNext(); // Go to the next slide
+customNextBtn4.addEventListener("click", function () {
+  swiper4.slideNext(); // Go to the next slide
 });
 
 document.addEventListener("DOMContentLoaded", function () {
