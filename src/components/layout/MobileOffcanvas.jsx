@@ -16,13 +16,13 @@ function MobileOffcanvas() {
         </button>
         <ul className="p-3 mt-3 d-flex flex-column gap-3">
           <li>
-            <a href="/">صفحه اصلی</a>
+            <Link href="/">صفحه اصلی</Link>
           </li>
           <li>
-            <a href="/cafe-restuarant">کافه رستوران ها</a>
+            <Link href="/cafe-restuarant">کافه رستوران ها</Link>
           </li>
           <li>
-            <a href="/cafe-single">طلاعات کافه</a>
+            <Link href="/cafe-single">طلاعات کافه</Link>
           </li>
           <li>
             <Link href="/contact-us">تماس با ما</Link>
